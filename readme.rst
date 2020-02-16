@@ -13,7 +13,8 @@ Como Funciona o Sistema?
 *******************
 Formas de Lançamento
 *******************
-O Sistema foi pensado para fazer o lançamento de duas formas, sendo manual ou automático, onde o usuário irá escolher a forma que mais lhe convém.
+O Sistema foi pensado para fazer o lançamento de duas formas, sendo manual ou automático, 
+onde o usuário irá escolher a forma que mais lhe convém.
 
 - Automático - O usuário através de um clique faz todo o lançamento de sua chegada na empresa, horário de almoço, e saída da empresa facilitando assim seus lançamentos.
 

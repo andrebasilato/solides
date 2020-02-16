@@ -3,8 +3,7 @@
       <li class="active">Dashboard</li>
     </ul>
 
-  <!-- <?php $date = date("z"); 
-  echo $date ?> -->
+  <?php $date = date("z"); ?>
 
   <div class="btn-toolbar">
       <form action="<?= base_url() ?>Ponto/entry">
