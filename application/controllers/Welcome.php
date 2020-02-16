@@ -6,7 +6,9 @@ class Welcome extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view('pages/login');
+		$this->load->view("template/login");
+		$this->load->view("template/css");
+		$this->load->view("pages/login");
 		
 	}
 
@@ -14,8 +16,8 @@ class Welcome extends CI_Controller
 	{
 
 		$this->load->model("Login_model");
-		$login = $_POST['login'];
-		$pass = md5($_POST['password']);
+		$login = $_POST["login"];
+		$pass = md5($_POST["password"]);
 		$user = $this->Login_model->store($login, $pass);
 
 		if ($user) {

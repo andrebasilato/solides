@@ -6,7 +6,9 @@ class Cadastro extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view('pages/cadastro');
+		$this->load->view("template/cadastro");
+		$this->load->view("template/css");
+		$this->load->view("pages/cadastro");
 		
 	}
 

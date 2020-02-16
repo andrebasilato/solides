@@ -20,8 +20,9 @@ class Dashboard extends CI_Controller
 		$this->load->model("Pages_model");
 		$data["users"] = $this->Pages_model->index();
 
-		$this->load->view('template/header');
-		$this->load->view('pages/dashboard', $data);
+		$this->load->view("template/header");
+		$this->load->view("template/dashboard");
+		$this->load->view("pages/dashboard", $data);
 		
 	}
 

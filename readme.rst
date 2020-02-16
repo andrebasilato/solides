@@ -1,70 +1,23 @@
 ###################
-What is CodeIgniter
+Como Funciona o Sistema?
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+- Estar rodando na máquina o PHP 5.6.x.
+- Clonar o projeto do Git.
+- Rodar o Apache e logo em Seguida executar o arquivo DUMP que esta na pasta com o nome SOLIDES.SQL.
+- Após a tabela solides ser criada, estar rodando o MySQL Database.
+- Com o MySQL Database rodando, executar no terminal o comando php -S "localhost:3030".
+- Abrir em seu navegador com o endereço "localhost:3030" e a aplicação será exibida.
+- Aplicação sendo exibida, fazer o cadastro de usuário e os lançamentos de horários.
 
 *******************
-Release Information
+Fomas de Lançamento
 *******************
+O Sistema foi pensado para fazer o lançamento de duas formas, sendo manual ou automático, 
+onde o usuário irá escolher a forma que mais lhe convém.
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+- Automático - O usuário através de um clique faz todo o lançamento de sua chegada na empresa, horário de almoço, e saída da empresa facilitando assim seus lançamentos.
 
-**************************
-Changelog and New Features
-**************************
+- Manual - Caso o usuário prefira fazer os lançamentos manuais, ele consegue também, pois as vezes ele faz o trabalho remoto ou até mesmo, de outras formas, que não consegue computar seu horários, neste caso, ele pode tirar um horário para fazer todos os seus lançamentos.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+- OBS - No banco, temos a tabela chamada tb_lancamento onde temos uma coluna com o nome tag, nela, iremos identificar se o lançamento foi feito manual ou automatico, e até mesmo identificar futuras novas tags.

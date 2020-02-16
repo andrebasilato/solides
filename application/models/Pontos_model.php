@@ -27,14 +27,14 @@ class Pontos_model extends CI_Model
     {
         $rlunch = array (
             "hr_volta_alm" => $date = date("Y-m-d H:i:s"),
-            "id_usuario" => $_SESSION['logged_user']['id'],
+            "id_usuario" => $_SESSION["logged_user"]["id"],
             "data_cad" => $date = date("Y-m-d H:i:s"),
             "dia_ano" => $date = date("z"),
             "tag" => 1,
             "excluido" => 0
         );
 
-        $this->db->where('dia_ano', $date);
+        $this->db->where("dia_ano", $date);
         return $this->db->update("tb_lancamento", $rlunch);
 
     }
@@ -43,14 +43,14 @@ class Pontos_model extends CI_Model
     {
         $exit_comp = array (
             "hr_saida_emp" => $date = date("Y-m-d H:i:s"),
-            "id_usuario" => $_SESSION['logged_user']['id'],
+            "id_usuario" => $_SESSION["logged_user"]["id"],
             "data_cad" => $date = date("Y-m-d H:i:s"),
             "dia_ano" => $date = date("z"),
             "tag" => 1,
             "excluido" => 0
         );
 
-        $this->db->where('dia_ano', $date);
+        $this->db->where("dia_ano", $date);
         return $this->db->update("tb_lancamento", $exit_comp);
     }
 

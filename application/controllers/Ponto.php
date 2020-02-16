@@ -16,8 +16,9 @@ class Ponto extends CI_Controller
     public function index()
     {
 
-        $this->load->view('template/header');
-        $this->load->view('pages/pontos');
+        $this->load->view("template/header");
+        $this->load->view("template/pontos");
+        $this->load->view("pages/pontos");
 
     }
 
@@ -30,7 +31,7 @@ class Ponto extends CI_Controller
             "hr_saida_alm" => $this->input->post("elunch"),
             "hr_volta_alm" => $this->input->post("rlunch"),
             "hr_saida_emp" => $this->input->post("exit"),
-            "id_usuario" => $_SESSION['logged_user']['id'],
+            "id_usuario" => $_SESSION["logged_user"]["id"],
             "data_cad" => $date = date("Y-m-d H:i:s"),
             "dia_ano" => $date = date("z"),
             "tag" => 0,
@@ -47,7 +48,7 @@ class Ponto extends CI_Controller
         $this->load->model("Pontos_model");
         $entry_comp = array (
             "hr_chegada_emp" => $date = date("Y-m-d H:i:s"),
-            "id_usuario" => $_SESSION['logged_user']['id'],
+            "id_usuario" => $_SESSION["logged_user"]["id"],
             "data_cad" => $date = date("Y-m-d H:i:s"),
             "dia_ano" => $date = date("z"),
             "tag" => 1,
